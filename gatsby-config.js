@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    url: "http://shouldiusetypescript.com",
     title: `Should I use TypeScript?`,
     description: `Do you need TypeScript for your next project?`,
     author: `@stemmlerjs`,
@@ -40,10 +41,10 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#601EFF`,
+        theme_color: `#601EFF`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.ico`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

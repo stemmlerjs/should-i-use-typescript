@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import flowData from '../data/flow'
 import { Button } from './shared/button';
 import "./App.sass"
+import { ShareButtons } from './shared/social';
 
 class App extends React.Component {
   constructor (props) {
@@ -55,7 +56,10 @@ class App extends React.Component {
             </div>
           ) : (
             <div className="social">
-              <a href="https://khalilstemmler.com/articles/when-to-use-typescript-guide/?utm_source=shouldiusetypescript&utm_medium=at-the-end">Based off of this discussion on "When to Use TypeScript"</a>
+              <a href="https://khalilstemmler.com/articles/when-to-use-typescript-guide/?utm_source=shouldiusetypescript&utm_medium=at-the-end">Based off of the article and Reddit thread on "When to Use TypeScript"</a>
+              <br/>
+              <br/>
+              <ShareButtons/>
             </div>
           )}
         </div>
