@@ -1,0 +1,24 @@
+
+Are you building something complex (than Twitter in 2007)?
+  Yes: Are you building a startup?
+    Yes: Is everyone on your team already familiar with how to use TypeScript?
+      Yes: Definitely. If you know it, use it! 
+      No: Will it take you and your team time to learn?
+        Yes: Have you found product-market fit?
+          Yes: Have you found traction?
+            Yes: Do it. TypeScript will save you lots of hours of debugging = happier users.
+            No: Focus on traction first, use whatever language you're comfortable with.
+          No: Focus on product-market fit first, use whatever language you're comfortable with.
+        No: Do it. You've got to worry about product-market fit and traction first. Use whatever language you're comfortable with.
+    No: Are you building something for work? 
+      Yes: 
+      No: So, it's a personal project. Is it just you working on it?
+        Yes: You definitely don't need it.
+        No: How many people are working on it?
+          1 to 3: You probably don't need it. A nice linter should do the trick.
+          3+: ...
+  No: Is it just you working on it?
+    Yes: You definitely don't need it.
+    No: How many people are working on it?
+      1 to 3: You probably don't need it. A nice linter should do the trick.
+      3+: ...
