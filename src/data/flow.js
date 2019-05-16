@@ -1,5 +1,5 @@
 export default {
-  "Are you building something with a complex domain (ie: more complex than Twitter)?": {
+  "Are you building something with a complex domain (ie: for the enterprise)?": {
     "yes": {
       "Are you building a startup?": {
         "yes": {
