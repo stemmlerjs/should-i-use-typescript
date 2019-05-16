@@ -57,10 +57,11 @@ class App extends React.Component {
             </div>
           ) : (
             <div className="social">
-              <a href="https://khalilstemmler.com/articles/when-to-use-typescript-guide/?utm_source=shouldiusetypescript&utm_medium=at-the-end">Based off of the article and Reddit thread on "When to Use TypeScript"</a>
+              <a href="https://khalilstemmler.com/articles/when-to-use-typescript-guide/?utm_source=shouldiusetypescript&utm_medium=at-the-end">Learn more from the article and Reddit thread this site is based off of called "When to Use TypeScript"</a>
               <br/>
               <br/>
               <ShareButtons/>
+              <a href="/">Start over</a>
             </div>
           )}
         </div>

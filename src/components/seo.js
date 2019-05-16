@@ -30,7 +30,6 @@ function SEO({ description, lang, meta, keywords, title, url }) {
   const metaDescription = description || site.siteMetadata.description;
 
   const image = `${site.siteMetadata.url}${shouldIImage}`
-  debugger;
 
   return (
     <Helmet
