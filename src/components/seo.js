@@ -9,8 +9,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import image from '../images/shouldi.png'
 
-function SEO({ description, lang, meta, keywords, title }) {
+function SEO({ description, lang, meta, keywords, title, url }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -19,6 +20,7 @@ function SEO({ description, lang, meta, keywords, title }) {
             title
             description
             author
+            url
           }
         }
       }
@@ -35,38 +37,36 @@ function SEO({ description, lang, meta, keywords, title }) {
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
+          { name: "image", content: image },
+          // General tags
+          { name: `description`, content: metaDescription },
+
+          // Opengraph tags
+          { property: `og:title`, content: title },
+          { property: `og:image`, content: image },
+          { property: `og:description`, content: description },
+          { property: `og:type`, content: `website` },
+          { property: `og:url`, content: url },
+
+          // Twitter cards
+
+          { name: "twitter:image", content: image },
+          {
+            name: `twitter:card`,
+            content: `summary`,
+          },
+          {
+            name: `twitter:creator`,
+            content: site.siteMetadata.author,
+          },
+          {
+            name: `twitter:title`,
+            content: title,
+          },
+          {
+            name: `twitter:description`,
+            content: metaDescription,
+          },
       ]
         .concat(
           keywords.length > 0

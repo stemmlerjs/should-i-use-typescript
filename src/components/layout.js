@@ -26,8 +26,8 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <SEO 
-          title="Home" 
-          keywords={[`gatsby`, `application`, `react`]} 
+          title="Should I Use TypeScript?" 
+          keywords={[`should`, `I`, `use`, `typescript`, `javascript`]} 
         />
         {children}
         <Footer/>

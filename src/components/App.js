@@ -48,6 +48,7 @@ class App extends React.Component {
     return (
       <div className="app">
         <div className="app-inner-container">
+          <h1 style={{ color: 'white', height: 0}}>Should I Use TypeScript?</h1>
           <h2>{question}</h2>
           {!flowCompleted ? (
             <div>

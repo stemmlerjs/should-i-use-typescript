@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     url: "http://shouldiusetypescript.com",
     title: `Should I use TypeScript?`,
-    description: `Do you need TypeScript for your next project?`,
+    description: `Exactly when you should use TypeScript rather than just basic JavaScript, and when you can probably do without it.`,
     author: `@stemmlerjs`,
   },
   plugins: [
