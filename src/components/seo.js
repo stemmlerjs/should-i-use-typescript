@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import image from '../images/shouldi.png'
+import shouldIImage from '../images/shouldi.png'
 
 function SEO({ description, lang, meta, keywords, title, url }) {
   const { site } = useStaticQuery(
@@ -27,7 +27,10 @@ function SEO({ description, lang, meta, keywords, title, url }) {
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description || site.siteMetadata.description;
+
+  const image = `${site.siteMetadata.url}${shouldIImage}`
+  debugger;
 
   return (
     <Helmet
@@ -46,7 +49,7 @@ function SEO({ description, lang, meta, keywords, title, url }) {
           { property: `og:image`, content: image },
           { property: `og:description`, content: description },
           { property: `og:type`, content: `website` },
-          { property: `og:url`, content: url },
+          { property: `og:url`, content: site.siteMetadata.url },
 
           // Twitter cards
 
