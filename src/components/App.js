@@ -55,7 +55,7 @@ class App extends React.Component {
             </div>
           ) : (
             <div className="social">
-              <a href="https://khalilstemmler.com/articles/when-to-use-typescript-guide/">Based off of this discussion on "When to Use TypeScript"</a>
+              <a href="https://khalilstemmler.com/articles/when-to-use-typescript-guide/?utm_source=shouldiusetypescript&utm_medium=at-the-end">Based off of this discussion on "When to Use TypeScript"</a>
             </div>
           )}
         </div>
